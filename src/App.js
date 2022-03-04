@@ -1,10 +1,10 @@
 import './App.css';
-import PageLayout from './components/PageLayout'
+import PageHandler from './components/PageHandler'
 
 function App() {
   return (
     <div>
-      <PageLayout />
+      <PageHandler />
     </div>
   );
 }
