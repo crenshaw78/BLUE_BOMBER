@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Row } from 'react-bootstrap';
 import Navigation from './Navigation';
 import About from '../pages/About';
 import Contact from '../pages/Contact';
@@ -31,11 +32,13 @@ function PageHandler() {
   return (
     <div>
       <Header />
-      <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
+      <Row style = {{paddingRight: '12vmin'}}>
+        <Navigation currentPage={currentPage} handlePageChange={handlePageChange} alignment='right' size='3vmin'/>
+      </Row>
       <Hero />
       <div>{renderPage(currentPage)}</div>
       <Footer />
-      <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
+      <Navigation currentPage={currentPage} handlePageChange={handlePageChange} alignment='center' size='4vmin'/>
     </div>
   );
 }

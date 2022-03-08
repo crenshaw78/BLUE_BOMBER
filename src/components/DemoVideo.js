@@ -2,7 +2,7 @@ import React from 'react';
 
 function DemoVideo () {
   return (
-    <div>
+    <div style={{textAlign: 'center'}}>
       Video Here
     </div>
   )

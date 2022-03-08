@@ -3,7 +3,7 @@ import PageHandler from './components/PageHandler'
 
 function App() {
   return (
-    <div>
+    <div style={{margin: '8vmin 12vmin'}}>
       <PageHandler />
     </div>
   );
