@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { Row } from 'react-bootstrap';
-import Navigation from './Navigation';
 import About from '../pages/About';
 import Contact from '../pages/Contact';
 import FAQ from "../pages/FAQ";
