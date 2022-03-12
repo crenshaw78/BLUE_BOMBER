@@ -6,7 +6,7 @@ import image5 from '../assets/images/image5.jpg';
 
 function Gallery () {
   return (
-    <Row>
+    <Row style={{margin: '2vmin'}}>
       <Col sm={4}>
         <Image style={{height: '50vmin', width: '60vmin'}} fluid src={image3} key="image3" alt="image of a large sign advertising a drive-in movie theater" />
       </Col>

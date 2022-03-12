@@ -4,12 +4,12 @@ import Gallery from '../components/Gallery';
 import TicketsSection from '../components/TicketsSection';
 import DemoVideo from '../components/DemoVideo';
 
-function Home () {
+function Home (props) {
   return (
     <div>
-      <Welcome />
+      <Welcome handlePageChange={props.handlePageChange} />
       <Gallery />
-      <TicketsSection />
+      <TicketsSection handlePageChange={props.handlePageChange} />
       <DemoVideo />
     </div>
   )

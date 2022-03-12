@@ -1,19 +1,24 @@
 import React from 'react';
-import { Row, Col, Image } from 'react-bootstrap';
+import Navigation from './Navigation';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 import logo from '../assets/images/logo.jpg';
 
-function Footer() {
+function Footer(props) {
 
   return (
-
-    <Row style={{alignItems: 'flex-end', justifyContent: 'center'}}>
+    <Container>
+      <Row style={{alignItems: 'flex-end', justifyContent: 'center'}}>
         <Col sm={3}>
           <Image fluid style={{height: '25vmin'}} src={logo} key="logo2" alt="logo"/ >
         </Col>  
-        <Col sm={5} style={{paddingBottom: '6vmin'}}>
+        <Col sm={4} style={{paddingBottom: '6vmin', paddingLeft: 0}}>
           <h1 style={{fontSize: '6.5vmin', fontWeight: 'bold'}}>Drive-Innovations</h1>
         </Col>
       </Row>
+      <Row>
+          <Navigation currentPage={props.currentPage} handlePageChange={props.handlePageChange} alignment='center' size='4vmin'/>
+      </Row>
+    </Container>
     );
   }
   

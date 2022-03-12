@@ -25,20 +25,16 @@ function PageHandler() {
       case 'OnlineTickets':
         return <OnlineTickets />;
       default:
-        return <Home/>;
+        return <Home handlePageChange={handlePageChange} />;
     }
   };
 
   return (
     <div>
-      <Header />
-      <Row style = {{paddingRight: '12vmin'}}>
-        <Navigation currentPage={currentPage} handlePageChange={handlePageChange} alignment='right' size='3vmin'/>
-      </Row>
-      <Hero />
+      <Header handlePageChange={handlePageChange} />
+      <Hero handlePageChange={handlePageChange} />
       <div>{renderPage(currentPage)}</div>
-      <Footer />
-      <Navigation currentPage={currentPage} handlePageChange={handlePageChange} alignment='center' size='4vmin'/>
+      <Footer handlePageChange={handlePageChange} />
     </div>
   );
 }

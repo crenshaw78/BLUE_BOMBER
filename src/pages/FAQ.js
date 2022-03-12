@@ -3,10 +3,10 @@ import questionList from '../assets/js/questions';
 
 function FAQ () {
   return (
-    <div>
-      <h1>Frequently Asked Questions</h1>
+    <div style={{textAlign: 'center'}}>
+      <h1 style={{fontSize: '14vmin', marginBottom: '4vmin'}}>Frequently Asked Questions</h1>
       {questionList.map((q,i) =>(
-        <div>
+        <div style={{textAlign: 'left', fontSize: '3.5vmin', margin: '4vmin'}}>
           <p style={{fontWeight: "bold"}}>{q.question}</p>
           <p>{q.answer}</p>
           <br />

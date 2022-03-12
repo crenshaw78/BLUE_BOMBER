@@ -2,8 +2,8 @@ import React from 'react';
 
 function OnlineTickets () {
   return (
-    <div>
-      <h1>Buy Tickets Online</h1>
+    <div style={{textAlign: 'center'}}>
+      <h1 style={{fontSize: '14vmin', marginBottom: '4vmin'}}>Buy Tickets Online</h1>
     </div>
   )
 };
