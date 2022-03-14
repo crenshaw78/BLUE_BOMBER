@@ -2,7 +2,7 @@ import React from 'react';
 
 function Contact () {
   return (
-    <div style={{textAlign: 'center'}}>
+    <div style={{textAlign: 'center', marginTop: '20vmin'}}>
       <h1 style={{fontSize: '14vmin', marginBottom: '4vmin'}}>Contact Us</h1>
       Contact form here
       <h2 style={{fontSize: '5vmin', fontWeight: 'bold', margin: '2vmin'}}>Address:</h2>

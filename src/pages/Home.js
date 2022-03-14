@@ -6,7 +6,7 @@ import DemoVideo from '../components/DemoVideo';
 
 function Home (props) {
   return (
-    <div>
+    <div style={{marginTop: '20vmin'}}>
       <Welcome handlePageChange={props.handlePageChange} />
       <Gallery />
       <TicketsSection handlePageChange={props.handlePageChange} />
