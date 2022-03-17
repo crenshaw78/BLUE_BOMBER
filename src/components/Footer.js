@@ -18,6 +18,7 @@ function Footer(props) {
       <Row>
           <Navigation currentPage={props.currentPage} handlePageChange={props.handlePageChange} alignment='center' size='4vmin'/>
       </Row>
+      <Row style={{fontSize: '3vmin', justifyContent: 'center'}}>&copy; 2022 - Drive-Innovations</Row>
     </Container>
     );
   }

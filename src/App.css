@@ -7,6 +7,17 @@
   pointer-events: none;
 }
 
+.carousel-indicators button {
+  height: 10px !important;
+  width: 10px !important;
+  border-radius: 100%;
+  background-color: white !important;
+}
+
+.carousel-indicators button.active {
+  background-color: #d16e04 !important;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
