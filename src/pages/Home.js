@@ -1,16 +1,16 @@
 import React from 'react';
-import Welcome from '../components/Welcome';
+import WhyYouNeedUs from '../components/WhyYouNeedUs';
 import Gallery from '../components/Gallery';
-import TicketsSection from '../components/TicketsSection';
-import DemoVideo from '../components/DemoVideo';
+import WhatWeOffer from '../components/WhatWeOffer';
+import WhatIsTheCostToYou from '../components/WhatIsTheCostToYou'
 
 function Home (props) {
   return (
     <div style={{marginTop: '20vmin'}}>
-      <Welcome handlePageChange={props.handlePageChange} />
+      <WhyYouNeedUs handlePageChange={props.handlePageChange} />
       <Gallery />
-      <TicketsSection handlePageChange={props.handlePageChange} />
-      <DemoVideo />
+      <WhatWeOffer handlePageChange={props.handlePageChange} />
+      <WhatIsTheCostToYou handlePageChange={props.handlePageChange} />
     </div>
   )
 };

@@ -1,7 +1,7 @@
 import { React, useEffect } from 'react';
 
 function Navigation(props) {
-  const tabs = ['Home', 'About', 'OnlineTickets', 'FAQ', 'Contact'];
+  const tabs = ['Home', 'SeeYourDemo', 'ContactUs'];
 
   useEffect(() => {
     const page = tabs.find(tab => window.location.hash.includes(tab.toLowerCase()))

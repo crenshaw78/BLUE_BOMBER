@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Contact () {
+function ContactUs () {
 
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
   const [errorMessage, setErrorMessage] = useState('');
@@ -32,8 +32,8 @@ function Contact () {
 
   return (
     <div style={{textAlign: 'center', marginTop: '20vmin'}}>
-      <h1 style={{fontSize: '14vmin', marginBottom: '4vmin'}}>Contact Us</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
+      <h1 style={{fontSize: '14vmin', marginBottom: '4vmin'}}>ContactUs Us</h1>
+      <form id="ContactUs-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name" style={{marginRight: 15}}>Name:</label>
           <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
@@ -64,4 +64,4 @@ function Contact () {
   )
 };
 
-export default Contact;
+export default ContactUs;

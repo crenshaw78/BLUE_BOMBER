@@ -16,7 +16,7 @@ function Hero (props) {
       />
       <Carousel.Caption>
         <h1 style={{fontSize: '14vmin'}}>Drive-Innovations</h1>
-        <Button style={{width: '40vmin', fontSize: '4vmin', padding: '4vmin', borderRadius: '8vmin', backgroundColor: '#d16e04', color: 'white'}} onClick={() => props.handlePageChange('OnlineTickets')} >Online Tickets</Button>
+        <Button style={{width: '40vmin', fontSize: '4vmin', padding: '4vmin', borderRadius: '8vmin', backgroundColor: '#d16e04', color: 'white'}} onClick={() => props.handlePageChange('ContactUs')} >Request A Demo</Button>
       </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item>
@@ -28,7 +28,7 @@ function Hero (props) {
       />
       <Carousel.Caption>
         <h1 style={{fontSize: '14vmin'}}>Drive-Innovations</h1>
-        <Button style={{width: '40vmin', fontSize: '4vmin', padding: '4vmin', borderRadius: '8vmin', backgroundColor: '#d16e04', color: 'white'}} onClick={() => props.handlePageChange('OnlineTickets')} >Online Tickets</Button>
+        <Button style={{width: '40vmin', fontSize: '4vmin', padding: '4vmin', borderRadius: '8vmin', backgroundColor: '#d16e04', color: 'white'}} onClick={() => props.handlePageChange('ContactUs')} >Request A Demo</Button>
       </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item>
@@ -40,7 +40,7 @@ function Hero (props) {
       />
       <Carousel.Caption>
         <h1 style={{fontSize: '14vmin'}}>Drive-Innovations</h1>
-        <Button style={{width: '40vmin', fontSize: '4vmin', padding: '4vmin', borderRadius: '8vmin', backgroundColor: '#d16e04', color: 'white'}} onClick={() => props.handlePageChange('OnlineTickets')} >Online Tickets</Button>
+        <Button style={{width: '40vmin', fontSize: '4vmin', padding: '4vmin', borderRadius: '8vmin', backgroundColor: '#d16e04', color: 'white'}} onClick={() => props.handlePageChange('ContactUs')} >Request A Demo</Button>
       </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item>
@@ -52,7 +52,7 @@ function Hero (props) {
       />
       <Carousel.Caption>
         <h1 style={{fontSize: '14vmin'}}>Drive-Innovations</h1>
-        <Button style={{width: '40vmin', fontSize: '4vmin', padding: '4vmin', borderRadius: '8vmin', backgroundColor: '#d16e04', color: 'white'}} onClick={() => props.handlePageChange('OnlineTickets')} >Online Tickets</Button>
+        <Button style={{width: '40vmin', fontSize: '4vmin', padding: '4vmin', borderRadius: '8vmin', backgroundColor: '#d16e04', color: 'white'}} onClick={() => props.handlePageChange('ContactUs')} >Request A Demo</Button>
       </Carousel.Caption>
     </Carousel.Item>
   </Carousel>

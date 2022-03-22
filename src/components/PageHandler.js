@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import About from '../pages/About';
-import Contact from '../pages/Contact';
-import FAQ from "../pages/FAQ";
+import SeeYourDemo from '../pages/SeeYourDemo';
+import ContactUs from '../pages/ContactUs';
 import Home from "../pages/Home";
-import OnlineTickets from "../pages/OnlineTickets";
 import Header from './Header';
 import Hero from './Hero';
 import Footer from './Footer';
@@ -14,14 +12,10 @@ function PageHandler() {
   // The renderPage method uses a switch statement to render the appropriate current page
   const renderPage = () => {
     switch (currentPage) {
-      case 'About':
-        return <About />;
-      case 'Contact':
-        return <Contact />;
-      case 'FAQ':
-        return <FAQ />;
-      case 'OnlineTickets':
-        return <OnlineTickets />;
+      case 'SeeYourDemo':
+        return <SeeYourDemo handlePageChange={handlePageChange} />;
+      case 'ContactUs':
+        return <ContactUs />;
       default:
         return <Home handlePageChange={handlePageChange} />;
     }
