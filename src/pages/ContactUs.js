@@ -1,10 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 function ContactUs () {
 
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
   const [errorMessage, setErrorMessage] = useState('');
   const { name, email, message } = formState;
+
+  const useScroll = () => {
+    const elRef = useRef(null);
+    const executeScroll = () => elRef.current.scrollIntoView();
+  
+    return [executeScroll, elRef];
+  };
+
+  const [executeScroll, elRef] = useScroll()
+  // eslint-disable-next-line
+  useEffect(executeScroll, [])
 
   function handleChange(e) {
     if (!e.target.value.length) {
@@ -31,20 +42,20 @@ function ContactUs () {
   }
 
   return (
-    <div style={{textAlign: 'center', marginTop: '20vmin'}}>
-      <h1 style={{fontSize: '14vmin', marginBottom: '4vmin'}}>ContactUs Us</h1>
+    <div ref={elRef} style={{textAlign: 'center', marginTop: '20vmin'}}>
+      <h1 style={{fontSize: '14vmin', marginBottom: '4vmin'}}>Contact Us</h1>
       <form id="ContactUs-form" onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="name" style={{marginRight: 15}}>Name:</label>
-          <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
+          <label htmlFor="name" style={{marginRight: 23}}>Name:</label>
+          <input type="text" defaultValue={name} onBlur={handleChange} name="name" style={{width: '60%'}} />
         </div>
         <div>
-          <label htmlFor="email" style={{marginRight: 18}}>Email:</label>
-          <input type="email" defaultValue={email} onBlur={handleChange} name="email" />
+          <label htmlFor="email" style={{marginRight: 28}}>Email:</label>
+          <input type="email" defaultValue={email} onBlur={handleChange} name="email" style={{width: '60%'}} />
         </div>
         <div>
-          <label htmlFor="message">Message:</label>
-          <textarea rows="5" defaultValue={message} onBlur={handleChange} name="message" />
+          <label htmlFor="message" style={{marginRight: 5}}>Message:</label>
+          <textarea rows="5" defaultValue={message} onBlur={handleChange} name="message" style={{width: '60%'}} />
         </div>
         {errorMessage && (
           <div>
@@ -53,13 +64,10 @@ function ContactUs () {
         )}
         <button type="submit" style={{marginLeft: 120}}>Submit</button>
       </form>
-      <h2 style={{fontSize: '5vmin', fontWeight: 'bold', margin: '2vmin'}}>Address:</h2>
-      <p style={{fontSize: '3.5vmin'}}>123 Main Street</p>
-      <p style={{fontSize: '3.5vmin'}}>Anytown, USA</p>
       <h2 style={{fontSize: '5vmin', fontWeight: 'bold', margin: '2vmin'}}>Phone:</h2>
-      <p style={{fontSize: '3.5vmin'}}>888-888-8888</p>
+      <a href="tel:+6515003640"style={{fontSize: '3.5vmin', textDecoration: 'none', color: 'black'}}>651-500-3640</a>
       <h2 style={{fontSize: '5vmin', fontWeight: 'bold', margin: '2vmin'}}>Email:</h2>
-      <p style={{fontSize: '3.5vmin'}}>something@email.com</p>
+      <a href="mailto:sales@drive-innovations.com?subject=Demo Request" style={{fontSize: '3.5vmin', textDecoration: 'none', color: 'black'}}>sales@drive-innovations.com</a>
     </div>
   )
 };

@@ -18,7 +18,7 @@ function Header(props) {
         </Col>
         <Col sm={6} style={{textAlign: 'right'}}>
           <Row style={{paddingRight: '2vmin'}}>
-            <h2><FaPhoneAlt size= {28}/>+1 888 888 8888</h2>
+            <a href="tel:+6515003640" style={{fontSize: '3vmin', textDecoration: 'none', color: 'black'}}><FaPhoneAlt size= {28}/>+1 651 500 3640</a>
           </Row>
           <Row>
             <Navigation currentPage={props.currentPage} handlePageChange={props.handlePageChange} alignment='right' size='2.6vmin'/>
