@@ -48,11 +48,11 @@ function SeeYourDemo (props) {
       <p style={{fontSize: '3.5vmin', margin: '2vmin'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       <form id="ContactUs-form" onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="email" style={{marginRight: 36}}>Email:</label>
+          <label htmlFor="email" style={{marginRight: 36, marginBottom: 15}}>Email:</label>
           <input type="email" defaultValue={email} onBlur={handleChange} name="email" style={{width: '60%'}} />
         </div>
         <div>
-          <label htmlFor="password" style={{marginRight: 10}}>Password:</label>
+          <label htmlFor="password" style={{marginRight: 10, marginBottom: 15}}>Password:</label>
           <input type="text" defaultValue={name} onBlur={handleChange} name="password" style={{width: '60%'}} />
         </div>
         {errorMessage && (
@@ -60,7 +60,9 @@ function SeeYourDemo (props) {
           <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button type="submit" style={{marginLeft: 120}}>Submit</button>
+        <div style={{width: '50%'}}>
+          <button type="submit">Submit</button>
+        </div>
       </form>
       <Button style={{width: '40vmin', margin: '2vmin', fontSize: '4vmin', padding: '4vmin', borderRadius: '8vmin', backgroundColor: 'black', color: 'white'}} onClick={() => props.handlePageChange('ContactUs')} >Request A Demo</Button>
     </div>

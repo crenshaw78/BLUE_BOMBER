@@ -46,15 +46,15 @@ function ContactUs () {
       <h1 style={{fontSize: '14vmin', marginBottom: '4vmin'}}>Contact Us</h1>
       <form id="ContactUs-form" onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="name" style={{marginRight: 23}}>Name:</label>
+          <label htmlFor="name" style={{marginRight: 23, marginBottom: 15}}>Name:</label>
           <input type="text" defaultValue={name} onBlur={handleChange} name="name" style={{width: '60%'}} />
         </div>
         <div>
-          <label htmlFor="email" style={{marginRight: 28}}>Email:</label>
+          <label htmlFor="email" style={{marginRight: 28, marginBottom: 15}}>Email:</label>
           <input type="email" defaultValue={email} onBlur={handleChange} name="email" style={{width: '60%'}} />
         </div>
         <div>
-          <label htmlFor="message" style={{marginRight: 5}}>Message:</label>
+          <label htmlFor="message" style={{marginRight: 5, marginBottom: 15}}>Message:</label>
           <textarea rows="5" defaultValue={message} onBlur={handleChange} name="message" style={{width: '60%'}} />
         </div>
         {errorMessage && (
@@ -62,7 +62,9 @@ function ContactUs () {
           <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button type="submit" style={{marginLeft: 120}}>Submit</button>
+        <div style={{width: '50%'}}>
+          <button type="submit">Submit</button>
+        </div>
       </form>
       <h2 style={{fontSize: '5vmin', fontWeight: 'bold', margin: '2vmin'}}>Phone:</h2>
       <a href="tel:+6515003640"style={{fontSize: '3.5vmin', textDecoration: 'none', color: 'black'}}>651-500-3640</a>
