@@ -15,7 +15,8 @@ function Hero (props) {
         style={{objectFit: 'cover', height: '60vmin'}}
       />
       <Carousel.Caption>
-        <h1 style={{fontSize: '14vmin'}}>Drive-Innovations</h1>
+        <h1 style={{fontSize: '14vmin', color: '#d16e04'}}>Drive-Innovations</h1>
+        <h2 style={{fontSize: '8vmin', color: 'white'}}>Digitize Your Drive-In</h2>
         <Button style={{width: '40vmin', fontSize: '4vmin', padding: '4vmin', borderRadius: '8vmin', backgroundColor: '#d16e04', color: 'white'}} onClick={() => props.handlePageChange('ContactUs')} >Request A Demo</Button>
       </Carousel.Caption>
     </Carousel.Item>
@@ -27,7 +28,8 @@ function Hero (props) {
         style={{objectFit: 'cover', height: '60vmin'}}
       />
       <Carousel.Caption>
-        <h1 style={{fontSize: '14vmin'}}>Drive-Innovations</h1>
+        <h1 style={{fontSize: '14vmin', color: '#d16e04'}}>Drive-Innovations</h1>
+        <h2 style={{fontSize: '8vmin', color: 'white'}}>Modernize Your Website</h2>
         <Button style={{width: '40vmin', fontSize: '4vmin', padding: '4vmin', borderRadius: '8vmin', backgroundColor: '#d16e04', color: 'white'}} onClick={() => props.handlePageChange('ContactUs')} >Request A Demo</Button>
       </Carousel.Caption>
     </Carousel.Item>
@@ -39,7 +41,8 @@ function Hero (props) {
         style={{objectFit: 'cover', height: '60vmin'}}
       />
       <Carousel.Caption>
-        <h1 style={{fontSize: '14vmin'}}>Drive-Innovations</h1>
+        <h1 style={{fontSize: '14vmin', color: '#d16e04'}}>Drive-Innovations</h1>
+        <h2 style={{fontSize: '8vmin', color: 'white'}}>Show Real-Time Stats</h2>
         <Button style={{width: '40vmin', fontSize: '4vmin', padding: '4vmin', borderRadius: '8vmin', backgroundColor: '#d16e04', color: 'white'}} onClick={() => props.handlePageChange('ContactUs')} >Request A Demo</Button>
       </Carousel.Caption>
     </Carousel.Item>
@@ -51,7 +54,8 @@ function Hero (props) {
         style={{objectFit: 'cover', height: '60vmin'}}
       />
       <Carousel.Caption>
-        <h1 style={{fontSize: '14vmin'}}>Drive-Innovations</h1>
+        <h1 style={{fontSize: '14vmin', color: '#d16e04'}}>Drive-Innovations</h1>
+        <h2 style={{fontSize: '8vmin', color: 'white'}}>At No Cost to You</h2>
         <Button style={{width: '40vmin', fontSize: '4vmin', padding: '4vmin', borderRadius: '8vmin', backgroundColor: '#d16e04', color: 'white'}} onClick={() => props.handlePageChange('ContactUs')} >Request A Demo</Button>
       </Carousel.Caption>
     </Carousel.Item>
